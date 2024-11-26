@@ -16,14 +16,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Calculator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cF3-rH-XPU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Calculator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cF3-rH-XPU">
                                 <rect key="frame" x="90" y="187" width="213" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="by Omer Cagri Sayir, Gurpreet Kaur, Bolaji Abdul, Akeem Adejumo" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tsc-6A-Ik1">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="by Omer Cagri Sayir, Gurpreet Kaur, Bolaji Abdul, Akeem Adejumo" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tsc-6A-Ik1">
                                 <rect key="frame" x="73" y="362" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="21"/>
@@ -32,14 +34,6 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="tsc-6A-Ik1" firstAttribute="top" secondItem="cF3-rH-XPU" secondAttribute="bottom" constant="136" id="39l-un-xF1"/>
-                            <constraint firstItem="tsc-6A-Ik1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="73" id="9R7-CX-TBG"/>
-                            <constraint firstItem="cF3-rH-XPU" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="fl4-JX-rp9"/>
-                            <constraint firstItem="tsc-6A-Ik1" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="oIf-gi-T0K"/>
-                            <constraint firstItem="tsc-6A-Ik1" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="sNo-2d-OXP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tsc-6A-Ik1" secondAttribute="trailing" constant="80" id="zM0-l1-YXU"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>

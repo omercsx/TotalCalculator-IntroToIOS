@@ -56,14 +56,26 @@
                                     <constraint firstAttribute="width" constant="292" id="gsd-9b-iJx"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQy-bv-ou3">
+                                <rect key="frame" x="116" y="671" width="161" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Normal Calculator">
+                                    <color key="baseBackgroundColor" red="0.22766292099999999" green="0.78031951190000004" blue="0.63922297949999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="7ix-Uo-Yn3" kind="show" id="vem-GH-Ozv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="bjp-nm-KZI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Qf-Z2-Txq"/>
+                            <constraint firstItem="oQy-bv-ou3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5R9-Ma-79b"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bjp-nm-KZI" secondAttribute="trailing" constant="51" id="8wY-gD-9QM"/>
                             <constraint firstItem="bjp-nm-KZI" firstAttribute="top" secondItem="Bfd-HP-VNg" secondAttribute="bottom" constant="61.670000000000002" id="CrW-r8-j3e"/>
                             <constraint firstItem="1Tz-aT-I6d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D0n-Av-MeG"/>
+                            <constraint firstItem="oQy-bv-ou3" firstAttribute="top" secondItem="dvf-KF-3as" secondAttribute="bottom" constant="34" id="IJN-6D-35b"/>
                             <constraint firstItem="1Tz-aT-I6d" firstAttribute="top" secondItem="bjp-nm-KZI" secondAttribute="bottom" constant="30" id="Mhm-zV-xAf"/>
                             <constraint firstItem="dvf-KF-3as" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R5n-qB-T3W"/>
                             <constraint firstItem="Bfd-HP-VNg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="101" id="RwE-Uj-us6"/>
@@ -92,7 +104,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="hBQ-B6-jgf">
-                                <rect key="frame" x="0.0" y="201" width="393" height="34"/>
+                                <rect key="frame" x="0.0" y="201" width="393" height="34.333333333333343"/>
                                 <connections>
                                     <action selector="ageChanged:" destination="ocP-bB-MOL" eventType="valueChanged" id="w21-O7-azD"/>
                                 </connections>
@@ -189,6 +201,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IL6-Cb-lmf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1485" y="658"/>
+        </scene>
+        <!--Calculator-->
+        <scene sceneID="az3-5S-usr">
+            <objects>
+                <viewController id="7ix-Uo-Yn3" customClass="NormalCalculatorViewController" customModule="TotalCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1If-sx-xZd">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="eI2-O0-GLb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Calculator" id="Ui9-hO-L7L"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MnT-bM-PFx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2269" y="656"/>
         </scene>
     </scenes>
     <resources>
